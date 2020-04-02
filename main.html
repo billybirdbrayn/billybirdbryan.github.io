@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <link href="css/form.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/responsiveform.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 601px)"
+        href="css/responsiveform1.css" />
+    <link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 351px)"
+        href="css/responsiveform2.css" />
+    <link rel="stylesheet" media="screen and (max-width: 350px)" href="css/responsiveform3.css" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    <title>MACH Points</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="main-header">
+            <a class="site-logo" href="/">
+                <img src="css/img/NicePng_house-icon-png_117319.png" alt="Poly - UI Toolkit">
+            </a>
+
+            <ul class="nav">
+                <li><a href="indexFinal.html">Team Billy - Home</a></li>
+                <li><a href="agility.html">About the Agility Game</a></li>
+                <li><a href="#masterPoints">Calculate MACH Points</a></li>
+                </a>
+            </ul>
+        </header>
+        <br>
+        <h2>Agility App</h2>
+        <br>
+        <!-- Calculate Master Points -->
+        <div id="envelope">
+            <header>Calculate MACH Points</header>
+            <div id=message></div>
+            <form id="masterPoints" method="post">
+                <fieldset>
+                    <legend>Master Points</legend>
+                    <label for="dogName">Dog Name</label>
+                    <select id="dogName" name="dogName">
+                        <option disabled hidden selected>Choose Dog Show</option>
+                        <option value="Ellie">Ellie</option>
+                        <option value="Jack">Jack</option>
+                        <option value="Margee">Margee</option>
+                    </select>
+
+                    <label for="show">Dog Show</label>
+                    <select id="show" name="show">
+                        <option disabled hidden selected>Choose Dog Show</option>
+                        <option value="DAWG">DAWG</option>
+                        <option value="DenTex">DenTex</option>
+                        <option value="Metro Golden">Metro Golden</option>
+                        <option value="Tyler Agility">Tyler Agility</option>
+                        <option value="Yippee Dogs">Yippee Dogs</option>
+                    </select>
+                    <hr>
+                    <label for="stdPoints">Standard Points Earned at Show</label>
+                    <input type="number" id="stdPoints" name="stdPoints" />
+                    <br>
+                    <br>
+                    <label for="jwwPoints">Jumpers Points Earned at Show</label>
+                    <input type="number" id="jwwPoints" name="jwwPoints" />
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit" />
+                </fieldset>
+
+                <div id="displayPoints">
+                    <h2>Master Standard Points: </h2>
+                    <div id="totalStdPoints">
+                        <p></p>
+                    </div>
+
+                    <h2>Master Standard Qs: </h2>
+                    <div id="totalStdQs">
+                        <p></p>
+                    </div>
+                    <h2>Master Jumper Points: </h2>
+                    <div id="totalJwwPoints">
+                        <p></p>
+                    </div>
+                    <h2>Master Jumpers Qs: </h2>
+                    <div id="totalJwwQs">
+                        <p></p>
+                    </div>
+                    <h2>Total Master Points: </h2>
+                    <div id="totalMasterPoints">
+                        <p></p>
+                    </div>
+                    <h2>Total Double Qs: </h2>
+                    <div id="doubleQ">
+                        <p></p>
+                    </div>
+                </div>
+        </div>
+        </form>
+    </div>
+
+    </div>
+
+    <script src="js/utilities.js"></script>
+    <!-- <script src="js/main.js"></script>-->
+    <script src="js/arrayTest.js"></script>
+
+
+</body>
+
+</html>

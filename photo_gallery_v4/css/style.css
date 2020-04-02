@@ -1,0 +1,106 @@
+
+body {
+font-size: 10px;
+}
+
+.gallery {
+    /*margin: 10px 50px;*/
+    margin-left : 10px;
+    text-align: center;
+   
+}
+
+header {
+   padding-top: 10px;
+   padding-bottom: 20px;
+   text-align: center;
+   font-size: 15px;
+}
+
+.header {
+   background-color: white;
+}
+input {
+   height: 35px;
+   width: 250px;
+   border: solid lightgray 3px;
+   border-radius: 5px;
+  
+}
+
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+
+.gallery img:hover {
+
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+
+/* Animation effects for Magnific */
+/* overlay at start */
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+   opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+   opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+   opacity: 0;
+
+   -webkit-transition: all 0.15s ease-out;
+   -moz-transition: all 0.15s ease-out;
+   transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+   opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+   opacity: 0;
+}
+
+.mfp-title {
+   font-size: 10px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+   header {
+      padding-top: 10px;
+      text-align: center;
+      font-size: 20px;
+   }
+   
+   input {
+      height: 35px;
+      width: 300px;
+      border: solid lightgray 3px;
+      border-radius: 5px;
+   }
+
+.mfp-title {
+   font-size: 20px;
+}
+   
+} 

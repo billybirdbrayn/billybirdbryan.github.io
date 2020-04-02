@@ -1,0 +1,109 @@
+/* --------------------------
+  Main Styles
+--------------------------- */
+
+.main-header,
+.nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-header {
+	padding-top: 2em;
+	background-color: royalblue;
+	border-radius:  10px;
+}
+
+.site-logo {
+	width: 110px;
+	align-self: center;
+}
+
+.nav {
+	margin-top: 1.5em;
+	background-color: white;
+	color: white;
+	border:2px solid royalblue;
+}
+
+.nav a {
+	display: block;
+	color: black;
+	font-size: 1.125em;
+	font-weight: 300;
+	text-align: center;
+	padding: .4em;
+	border-bottom: 1px solid #ebecec;
+}
+
+.nav a:hover {
+	color: #0b0b0b;
+	border-bottom-color: royalblue;
+}
+
+h1 { font-size: 60px; }
+h3 {
+  font-size: 32px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+h6 { font-size: 22px; }
+
+.banner h1, .banner h3, .banner h6 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+}
+
+.banner {
+  color: white;
+  background: url(images/ellieTunnel.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media (min-width: 769px) {
+	.main-header {
+		height: 200px;
+		justify-content: flex-end;
+	}
+	.site-logo {
+		width: 140px;
+	}
+	.nav {
+		margin-top: 3em;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.nav a {
+		border-bottom-color: transparent;
+	}
+}
+
+@media (min-width: 1025px) {
+	.main-header {
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	.site-logo {
+		margin-right: auto;
+	}
+	.nav {
+		margin-top: 0;
+		align-self: center;
+	}
+	.nav li {
+		margin-left: .65em;
+		margin-right: .65em;
+	}
+}

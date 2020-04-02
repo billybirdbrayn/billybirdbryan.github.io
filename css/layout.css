@@ -1,0 +1,26 @@
+/* ===================================================================== 
+   Practice CSS Grid Layout
+======================================================================== */
+
+/* Target the grid container */
+.main-content {
+  width: 95%;
+  max-width: 1000px;
+  
+  /* Turn on the grid */
+display: grid;
+  
+  /*   
+    Instruct the browser to automatically fit column tracks.
+     - Use the Grid functions and keywords that auto-generate as many columns 
+    necessary to fit the available space, without causing the grid to overflow.
+     - Each column should not get narrower than 280px and, if the available space allows it, 
+    each column should expand to take up 1 fraction of the free space.
+  */
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  
+  /* Apply a 20px gutter to rows and columns */ 
+  grid-gap: 20px;
+
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--It is best to place the plug-in css file first.-->
+
+<head>
+    <title>Image Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="css/magnific-popup.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header id="sticker" class="header">
+        <div>
+            <h1>Photo Gallery</h1>
+            <form id="search-box">
+                <input type="text" id="myInput" placeholder="Search">
+            </form>
+        </div>
+    </header>
+
+    <!--class name "light-box identifies the <a> tag for the plug-in-->
+    <!--the title attribute helpt the search filter identify the caption text-->
+
+    <div id="photo-list" class="gallery">
+
+        <a href="photos/01.jpg" id="Hay-Bales" class="light-box"
+            title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+            <img src="photos/thumbnails/01.jpg" alt="Hey Bales"></a>
+
+        <a href="photos/02.jpg" id="Lake" class="light-box"
+            title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+            <img src="photos/thumbnails/02.jpg" alt="Lake"></a>
+
+        <a href="photos/03.jpg" id="Canyon" class="light-box"
+            title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+            <img src="photos/thumbnails/03.jpg" alt="Canyon"></a>
+
+        <a href="photos/04.jpg" id="Iceberg" class="light-box"
+            title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+            <img src="photos/thumbnails/04.jpg" alt="Iceberg"></a>
+
+        <a href="photos/05.jpg" id="Desert" class="light-box"
+            title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+            <img src="photos/thumbnails/05.jpg" alt="Desert"></a>
+
+        <a href="photos/06.jpg" id="Fall" class="light-box"
+            title="Fall is coming, I love when the leaves on the trees start to change color.">
+            <img src=" photos/thumbnails/06.jpg" alt="Fall"></a>
+
+        <a href="photos/07.jpg" id="Plantation" class="light-box"
+            title="I drove past this plantation yesterday, everything is so green!">
+            <img src="photos/thumbnails/07.jpg" alt="Plantation"></a>
+
+        <a href="photos/08.jpg" id="Dunes" class="light-box"
+            title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+            <img src="photos/thumbnails/08.jpg" alt="Dunes"></a>
+
+        <a href="photos/09.jpg" id="Countryside-Lane" class="light-box"
+            title="We enjoyed a quiet stroll down this countryside lane.">
+            <img src="photos/thumbnails/09.jpg" alt="Countryside Lane"></a>
+
+        <a href="photos/10.jpg" id="Sunset" class="light-box"
+            title="Sunset at the coast! The sky turned a lovely shade of orange.">
+            <img src="photos/thumbnails/10.jpg" alt="Sunset"></a>
+
+        <a href="photos/11.jpg" id="Cave" class="light-box"
+            title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+            <img src="photos/thumbnails/11.jpg" alt="Cave"></a>
+
+        <a href="photos/12.jpg" id="Bluebells" class="light-box"
+            title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+            <img src="photos/thumbnails/12.jpg" alt="Bluebells"></a>
+
+    </div>
+    </div>
+    <br>
+    <br>
+    <footer class="container-fluid bg-4 text-center">
+        <p><a href="../indexFinal.html">Home Page</a></p>
+    </footer>
+
+    <!--Sequence of js files is crucial 1) jQuery 2) plug-in 3) external js file.-->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--
+    <script>
+        $(document).ready(function () {
+            $('.light-box').magnificPopup({
+                type: 'image',
+                gallery: { enabled: true },
+                removalDelay: 300,       // Delay in milliseconds before popup is removed
+                mainClass: 'mfp-fade',   // Class that is added to popup wrapper and background
+                image: {
+                    titleSrc: 'title' // this tells the script which attribute has your caption
+                }
+            });
+        });
+    </script> -->
+
+
+</body>
+
+</html>

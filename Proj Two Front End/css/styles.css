@@ -1,0 +1,409 @@
+/* ================================= 
+  Mobile first approach based on min-width
+==================================== */
+
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+span {
+	font-weight: bolder;
+	color: black;
+}
+
+hr { 
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+  } 
+
+.justify {
+	text-align: justify;
+}
+
+.center {
+	text-align: center;
+	font-style: italic;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+		
+}
+
+.centerHeader {
+	text-align: center;
+}
+
+/* ================================= 
+  Base Layout Styles
+=================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+/* --- Provides space from site name --- */
+.main-nav {
+	margin-top: 5px;
+	
+}
+
+/* --- padding makes the hover links taller --- */
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: black;
+	background-color: white;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+
+	
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: rgb(178, 32, 117);
+}
+
+.none {
+	display: none;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+	color: black;
+	background: lightgray;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+
+
+/* ---- .col helps with the gutters (spacing between content columns) ---- */
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+	padding-right: 40px;
+	padding-left: 30px;
+	font-size: 30%;
+	
+	
+}
+
+.footerLeft {
+	text-align: left;
+}
+
+.nav-footersmall li{
+	
+	display: inline-block;
+	margin-left: 10%;
+	font-size: 70%;
+	margin-right: -10px;
+
+}
+
+
+.nav-footer li{
+	display: none;
+	margin-left: 0px;
+	font-size: 70%;	
+	margin-right: -20px;
+	
+}
+
+li.coming-soon {
+	visibility: hidden;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+
+.nameTwo {
+	
+	float: left;
+	font-size: 70%;
+}
+/* ---- Page Elements ---- */
+
+.main-photo {
+	width: 70%;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+
+	body {
+		padding-top: 20px;
+	}
+
+/* set the position to fix to ensure the Nav bar stays at top of page */	
+.main-header {
+	
+	background: lightseagreen;
+	box-shadow: 0 1px 4px rgba(0,0,0, .4);
+	width: 100%;
+	
+	}
+
+	.main-nav a {
+		font-size: .95em;
+		color: black;
+		background-color:lightseagreen;
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		text-transform: uppercase;
+	}
+	.main-photo {
+		width: 30%;
+		float: right;
+		padding-left: 10px;
+		padding-right: 15px;
+	}
+
+	.padText {
+		padding-left: 15px;
+		
+
+	}
+
+	/* --- margin: 0 auto centers content in browser  --- */
+	.container, .containerTwo {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	
+	.col {
+		float: left;
+	}
+	
+	.sub-paragraph{
+		width: 50%;
+	}
+
+	.sub-paragraph-two{
+		width: 50%;
+	}
+.left {
+	float: right;
+}
+
+.right {
+	float: left;
+}
+
+	.main-nav {
+		
+		text-align: center;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+		text-align: center;
+		
+		
+	}
+
+	.nav-footersmall li{
+		display: none;
+	}	
+
+	.nav-footer li{
+		display: inline-block;
+		margin-left: 5%;
+		font-size: 70%;	
+		margin-right: 10px;
+		
+	}
+
+li.coming-soon {
+	visibility: hidden;
+}
+	/* ---- Float clearfix  - Helps collapsing containers---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	.name, 
+	.col {
+		float: left;
+	}
+
+	.show {
+		display: block;
+	}
+	
+	
+	.main-header {
+	
+		background: lightseagreen;
+		box-shadow: 0 1px 4px rgba(0,0,0, .4);
+		width: 100%;
+		
+		}
+	
+		.main-nav a {
+			
+			font-size: .95em;
+			color: black;
+			background-color:lightseagreen;
+			margin-right: 0px;
+			margin-left: 60px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+		.main-photo {
+			width: 35%;
+			float: right;
+			padding-left: 10px;
+			padding-right: 15px;
+		}
+	
+		.padText {
+            padding-left: 15px;
+            
+    
+        }
+	
+	.container, .containerTwo{
+			width: 80%;
+			max-width: 1150px;
+				
+		}
+
+	.containerHead {
+		text-align: right;
+		width: 100%;
+		max-width: 2500px;
+	}
+	.sub-paragraph {
+		width: 33%;
+	}
+
+	.sub-paragraph-two{
+		width: 50%;
+					
+	}
+
+	.nav-footersmall li{
+		display: none;
+	}	
+
+
+	.nav-footer li{
+		font-family: 'Poppins', sans-serif;
+		font-weight: bold;
+		display: inline-block;
+		font-size: 100%;	
+		text-align: left;
+		padding: 0;
+		margin: 0;
+		
+	}
+	.nav-footer {
+		margin-right: 0;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+
+	li.coming-soon {
+		visibility: hidden;
+}
+
+}

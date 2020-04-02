@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/agility.css">
+    <title>Agility</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Team Billy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="indexFinal.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">MACH App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutAgility">About Agility</a>
+                    </li><br>
+                    <li class="nav-item dropdown">
+
+                        <div>
+                            <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Team Members</button>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#" data-toggle="modal" data-target="#modalRelatedContentEllie">Ellie</a>
+                                </li>
+
+                                <li><a href="#" data-toggle="modal" data-target="#modalRelatedContentMargee">Margee</a>
+                                </li>
+
+                                <li><a href="#" data-toggle="modal" data-target="#modalRelatedContentJack">Jack</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="modal fade right" id="modalRelatedContentEllie" tabindex="-1" role="dialog"
+                            aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+                            <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info"
+                                role="document">
+                                <!--Content-->
+                                <div class="modal-content">
+                                    <!--Header-->
+                                    <div class="modal-header">
+                                        <p class="heading">Miss Ellie</p>
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class="white-text">&times;</span>
+                                        </button>
+                                    </div>
+                                    <!--Body-->
+                                    <div class="modal-body">
+
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <img src="images/ellieWeaves.jpg" class="img-fluid" alt="">
+                                            </div>
+
+                                            <div class="col-7">
+                                                <p><strong>MACH Miss Ellie, UD, MSX, MSJ</strong></p>
+                                                <p>Miss Ellie is a 12 year-old American Eskimo. She has earned an array
+                                                    of performance titles. In addition to being an agility champion, she
+                                                    is an obedience utility dog. <a href=""></a></p>
+                                                <!--<button type="button" class="btn btn-info btn-md">Read more</button>-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Content-->
+                            </div>
+                        </div>
+
+
+
+                        <div class="modal fade right" id="modalRelatedContentMargee" tabindex="-1" role="dialog"
+                            aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+                            <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info"
+                                role="document">
+                                <!--Content-->
+                                <div class="modal-content">
+                                    <!--Header-->
+                                    <div class="modal-header">
+                                        <p class="heading">Margee B of Big "D" (Dallas)</p>
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class="white-text">&times;</span>
+                                        </button>
+                                    </div>
+                                    <!--Body-->
+                                    <div class="modal-body">
+
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <img src="images/margeeJHigh.png" class="img-fluid" alt="">
+                                            </div>
+
+                                            <div class="col-7">
+                                                <p><strong>MACH Margee, CD, MSX, MSJ</strong></p>
+                                                <p>Margee is a 12 year-old American Eskimo. She is an agility master
+                                                    champion. She also holds obedience titles. Besides her work in the
+                                                    performance ring, she has great maternal instincts and helpd train
+                                                    and nurture the youngest team member, Jack! <a href=""></a></p>
+                                                <!--<button type="button" class="btn btn-info btn-md">Read more</button>-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Content-->
+                            </div>
+                        </div>
+
+
+
+                        <div class="modal fade right" id="modalRelatedContentJack" tabindex="-1" role="dialog"
+                            aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+                            <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info"
+                                role="document">
+                                <!--Content-->
+                                <div class="modal-content">
+                                    <!--Header-->
+                                    <div class="modal-header">
+                                        <p class="heading">Lumber "Jack" LeDu</p>
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class="white-text">&times;</span>
+                                        </button>
+                                    </div>
+                                    <!--Body-->
+                                    <div class="modal-body">
+
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <img src="images/jackModal.png" class="img-fluid" alt="">
+                                            </div>
+
+                                            <div class="col-7">
+                                                <p><strong>Grand Champion Jack, RA</strong></p>
+                                                <p>Jack is a breed Grand Champion. He is just embarking on his agility
+                                                    career. He is a four year-old American Eskimo. <a href=""></a></p>
+                                                <!--<button type="button" class="btn btn-info btn-md">Read more</button>-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Content-->
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="banner">
+            <div class="banner-text">
+                <h1>Team Billy</h1>
+                <br>
+                <h3>Three AKC Champs!</h3>
+                <h6>Texas Eskimos with lots of Drive!</h6>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Team Billy</h3>
+        <!--<img src="images/ellieWeaves.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird"
+            width="350" height="350">-->
+        <p>Team Billy came about in 2005. Our dog Billy wanted to play. He had lots of energy. Consequently, I enrolled
+            him in an agility course. Billy loved the game. I too, enjoyed the game and made many friends. As a result,
+            our team grew! Margee and Ellie joined our team in 2008. After everyone had retired, Jack joined the pack.
+            However, he took an entirely different path. He became a breed champion. In recent months, he too aria-has
+            been taking lessons and working towards competition. </p>
+
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2 text-center">
+        <h3 id="aboutAgility" class="margin">About the Agility App</h3>
+        <p>Once a dog reaches the Master Standard and Master Jumper with Weaves classes, the dog begins to accure points
+            toward their championship. This title is refered to as the MACH (Master Agility Champion). In order to earn
+            this title, a dog must earn 750 master points. The purpose of this app is to keep a running tally of master
+            points. <br> <br>
+            Often times a contestent is at a dog show and the American Kennel Club has not had an opportunity to process
+            previously earned points. Thus, this app will allow you to keep your own tally so that you do not miss
+            celebrating your MACH victory. When that sought after MACH is earned, the team (dog and handler) take a
+            victory lap in the ring!
+        </p>
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center">
+        <h3 class="margin">Important Rules of the Game</h3><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>The tire is one of many types of jumps in agility. It is often used at the start of a course. In
+                    addition to clearing a jump, a dog must not knock a bar over. That is an automatic disqualification.
+                    This is Ellie clearing the tire.
+                </p>
+                <img src="images/ellieTire.png" class="img-responsive margin" style="width:100%" alt="Image">
+
+            </div>
+            <div class="col-sm-4">
+                <p>The teeter is part of the Standard ring. When the dog ascends up as well as descends down the teeter,
+                    the dog must make contact with the yellow zone. Dogs are not permitted to jump off the teeter. Billy
+                    loved the teeter!</p>
+                <img src="images/billyTeeter.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                <caption>Billy our Team Leader</caption>
+
+            </div>
+            <div class="col-sm-4">
+                <p>Weavepoles are also in both the Standard and Jumpers ring. They happen to be the most difficult skill
+                    to master. In the master ring, there are twelve poles to a set. The dog must make the appropriate
+                    entry and weave around each pole.</p>
+                <img src="images/ellieWeaves.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <p><a href="indexFinal.html">Team Billy</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

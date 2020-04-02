@@ -1,0 +1,46 @@
+
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+
+}
+
+p {
+    font-size: 16px;
+}
+
+.margin {
+    margin-bottom: 45px;
+}
+
+
+.bg-2 {
+    background-color: royalblue;
+    color: #ffffff;
+
+}
+
+
+.bg-2 {
+    background-color: royalblue;
+    color: #ffffff;
+}
+
+
+.bg-3 {
+    background-color: #ffffff;
+
+    color: #555555;
+}
+
+.bg-4 {
+    background-color: yellow;
+
+    color: #fff;
+}
+
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}

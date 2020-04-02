@@ -1,0 +1,51 @@
+/* ===================================== 
+   Page Styles
+======================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+	font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 0;
+
+}
+a {
+  color: #278da4;
+  text-decoration: none;
+}
+p {
+  margin-bottom: 1.25em;
+}
+.main-content {
+  margin: 2em auto;
+}
+.card {
+  padding: 1.5em 1em;
+  border: 1px solid royalblue;
+  border-radius: 0.35em;
+}
+.card h1 {
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  color: royalblue; 
+  margin: 0;
+  line-height: 1.5;
+}
+.btn {
+  font-size: 0.85em;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  background-color: royalblue;
+  border-radius: 0.35em;
+  display: block;
+}
+.material-icons {
+  color: lightblue; 
+  font-size: 2.25em;
+}
